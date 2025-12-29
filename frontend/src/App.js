@@ -13,6 +13,7 @@ import CrossBorderSharing from '@/pages/CrossBorderSharing';
 import LegalCertificate from '@/pages/LegalCertificate';
 import CourtroomPresentation from '@/pages/CourtroomPresentation';
 import RetentionClosure from '@/pages/RetentionClosure';
+import { Toaster } from '@/components/ui/sonner';
 
 function App() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -37,6 +38,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      <Toaster />
     </div>
   );
 }
