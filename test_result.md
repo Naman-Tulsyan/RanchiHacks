@@ -101,3 +101,126 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Test the ForensiChain AI Evidence Console application - a digital evidence management dashboard with navigation, evidence capture, AI triage, privacy controls, chain of custody, legal certificates, and courtroom presentation features."
+
+frontend:
+  - task: "Navigation & Layout"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/layout/DashboardLayout.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Need to test sidebar navigation between all pages, progress bar updates, and status indicators"
+
+  - task: "Capture Evidence Page"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/CaptureEvidence.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Need to test case selection, form fields, file upload, and verification card display"
+
+  - task: "Digital Malkhana Page"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/DigitalMalkhana.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Need to test evidence table display, stats cards, and blockchain ingestion functionality"
+
+  - task: "AI Triage Page"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/AITriage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Need to test priority summary cards and AI analysis side panel"
+
+  - task: "Privacy & Redaction Page"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/PrivacyRedaction.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Need to test role switching, redaction toggle, and access alerts"
+
+  - task: "Chain of Custody Page"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/ChainOfCustody.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Need to test transfer timeline, form submission, and transfer acceptance"
+
+  - task: "Legal Certificate Page"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/LegalCertificate.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Need to test certificate generation and download functionality"
+
+  - task: "Courtroom Presentation Page"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/CourtroomPresentation.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "Need to test blockchain verification and all tabs functionality"
+
+metadata:
+  created_by: "testing_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: true
+
+test_plan:
+  current_focus:
+    - "Navigation & Layout"
+    - "Capture Evidence Page"
+    - "Digital Malkhana Page"
+    - "AI Triage Page"
+    - "Privacy & Redaction Page"
+    - "Chain of Custody Page"
+    - "Legal Certificate Page"
+    - "Courtroom Presentation Page"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "sequential"
+
+agent_communication:
+    - agent: "testing"
+    - message: "Starting comprehensive testing of ForensiChain AI Evidence Console. All major features need testing including navigation, evidence capture, AI triage, privacy controls, chain of custody, legal certificates, and courtroom presentation."
