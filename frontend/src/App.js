@@ -1,11 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import '@/App.css';
-import MainLayout from '@/components/layout/MainLayout';
-import Login from '@/pages/Login';
-import Dashboard from '@/pages/Dashboard';
-import EvidenceDetail from '@/pages/EvidenceDetail';
-import ChainOfCustody from '@/pages/ChainOfCustody';
-import { Toaster } from '@/components/ui/sonner';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "@/App.css";
+import "shepherd.js/dist/css/shepherd.css";
+import MainLayout from "@/components/layout/MainLayout";
+import Login from "@/pages/Login";
+import Dashboard from "@/pages/Dashboard";
+import EvidenceDetail from "@/pages/EvidenceDetail";
+import ChainOfCustody from "@/pages/ChainOfCustody";
+import { Toaster } from "@/components/ui/sonner";
 
 function App() {
   return (
